@@ -1,0 +1,41 @@
+{
+    "product" : [
+        {
+            "name" :"Caffè Latte",
+            "desc" : "Rich, full-bodied espresso in steamed milk, lightly topped with foam. A caffè latte is simply a shot or two of bold, tasty espresso with fresh, sweet steamed milk over it.",
+            "price" : 43000,
+            "category" : "drink",
+            "img" : "latte.jpg"
+        },
+        {
+            "name" :"Cappuccino",
+            "desc" : "Espresso with steamed milk, topped with a deep layer of foam.",
+            "price" : 43000,
+            "category" : "drink",
+            "img" : "cappucino.jpg"
+        },
+        {
+            "name" :"Caffè Mocha",
+            "desc" : "Espresso with bittersweet mocha sauce and steamed milk, topped with sweetened whipped cream. Delightful.",
+            "price" : 43000,
+            "category" : "drink",
+            "img" : "mocha.jpg"
+        },
+        {
+            "name" :"Caramel Macchiato",
+            "desc" : "Espresso combined with vanilla-flavoured syrup, milk and caramel sauce over ice. A Starbucks classic, chilled for a classic summers day. To our signature espresso we add a creamy mix of vanilla syrup and cold milk poured over ice; its then topped with our proprietary buttery caramel sauce. Sweet! ",
+            "price" : 43000,
+            "category" : "drink",
+            "img" : "caramel.jpg"
+        },
+        {
+            "name" :"Caffè Americano",
+            "desc" : "HOT: Rich, full-bodied espresso with hot water.",
+            "price" : 43000,
+            "category" : "beverages",
+            "img" : "americano.jpg"
+        }
+     
+    ]
+  
+}
