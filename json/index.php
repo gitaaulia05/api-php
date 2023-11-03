@@ -3,7 +3,8 @@
  $menu = json_decode($data , true);
 
  $product = $menu['product'];
- echo $product[0]["name"];
+ // TEST JSON
+//  echo $product[0]["name"];
 ?>
 
 <!doctype html>
@@ -16,6 +17,30 @@
   </head>
   <body>
 
+
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-white">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link"  aria-current="page" href="#">All Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Drink</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Beverages</a>
+              </li>
+            
+            </ul>
+          </div>
+        </div>
+      </nav>
 
       <div class="container mt-3">
         <div class="row">
