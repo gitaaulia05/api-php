@@ -24,7 +24,13 @@
 
 
     // LATEST VIDIO
-    
+    $latestV = 'https://www.googleapis.com/youtube/v3/search?key=AIzaSyA1nE68Si5dmziWexiQ9hF0nJz75hY0ipA&channelId=UCIc9Kx9naOGjmgYWnDDjs6A&maxResults=1&order=date&part=snippet';
+    $result = get_curl($latestV);
+
+     $video = $result['items'][0]['id']['videoId'];
+
+     // API FACEBOOK
+     $apIg= '2a2ecdc7a5bd5c07390cf8e12169fa25';
 
     ?>
 
@@ -59,15 +65,16 @@
 
                      <div class="row">
                          <div class="col-md-4"><img src="<?= $ytPic; ?>" width="100" class="rounded-circle img-thumbnail"></div>
-                         <div class="col-md-8"> <h5> <?= $title; ?> </h5> 
+                         <div class="col-md-8"> <h5> <?= $title; ?> Subscribers </h5> 
                              <div class="row">
                                  <div class="col-md-12 follow"> <?= $subs; ?></div>
+                               <div class="g-ytsubscribe" data-channelid="UCIc9Kx9naOGjmgYWnDDjs6A" data-layout="default" data-count="hidden"></div>
                              </div>
                          </div>
                      </div>
 
                      <div class="yt mt-5">
-                         <iframe src="https://www.youtube.com/embed/cVKUS9DoLD0" class="object-fit-contain"></iframe>
+                         <iframe src="https://www.youtube.com/embed/<?= $video; ?>" class="object-fit-contain"></iframe>
                      </div>
 
                  </div>
@@ -99,6 +106,10 @@
 
 
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+     <script src="https://apis.google.com/js/platform.js"></script>
+
+
  </body>
 
  </html>
